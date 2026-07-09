@@ -729,6 +729,56 @@ header {
   display: block;
 }
 
+/* ── HTML Text Formula Styles ── */
+.formula-text {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.fml-var {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 3.8rem;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1;
+}
+
+.fml-eq {
+  font-size: 3rem;
+  font-weight: 300;
+  color: rgba(255,255,255,0.5);
+  font-style: normal;
+  line-height: 1;
+}
+
+.fml-op {
+  font-size: 3rem;
+  font-weight: 700;
+  color: rgba(255,255,255,0.7);
+  font-style: normal;
+  line-height: 1;
+}
+
+.fml-note {
+  font-size: 0.9rem;
+  font-style: normal;
+  color: var(--color-text-muted);
+  font-family: var(--font-body);
+  font-weight: 400;
+  align-self: flex-end;
+  margin-bottom: 8px;
+  white-space: nowrap;
+}
+
+/* Variable Colors */
+.fml-green { color: var(--neon-green); text-shadow: 0 0 20px rgba(0,230,118,0.5); }
+.fml-cyan  { color: var(--neon-cyan);  text-shadow: 0 0 20px rgba(0,242,254,0.5); }
+.fml-gold  { color: var(--gold-accent);text-shadow: 0 0 20px rgba(255,215,0,0.5); }
+.fml-white { color: #ffffff; }
+
 /* Image Showcase / Galleries */
 .screenshot-gallery {
   margin-top: 40px;
