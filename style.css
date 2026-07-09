@@ -669,66 +669,64 @@ header {
 
 /* Formula Specifics inside Phase 2 */
 .formulas-showcase {
-  margin-top: 35px;
-  display: grid;
-  grid-template-columns: 1fr; /* Full-width, one per row for max readability */
-  gap: 25px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .formula-card {
-  padding: 35px 40px;
-  border-color: var(--border-glass);
+  padding: 40px 50px;
+  border-color: rgba(0, 242, 254, 0.2);
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 40px;
+  gap: 24px;
+  text-align: center;
 }
 
 .formula-card:hover {
   border-color: var(--neon-cyan);
-  box-shadow: 0 0 30px rgba(0, 242, 254, 0.08);
+  box-shadow: 0 0 40px rgba(0, 242, 254, 0.12);
+  transform: translateY(-4px);
 }
 
 .formula-label {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 10px;
-  font-size: 1.1rem;
+  gap: 14px;
+  font-size: 1.3rem;
   font-weight: 700;
   color: var(--neon-cyan);
-  min-width: 160px;
-  text-align: center;
-  flex-shrink: 0;
+  text-shadow: 0 0 10px rgba(0, 242, 254, 0.4);
 }
 
 .formula-label img.formula-icon-img {
-  height: 48px;
+  height: 44px;
   object-fit: contain;
-  filter: invert(1) brightness(2);
-  opacity: 0.9;
+  filter: invert(1) brightness(2.5) drop-shadow(0 0 6px rgba(0,242,254,0.6));
+  opacity: 1;
 }
 
 .formula-image-box {
-  flex: 1;
-  background: rgba(0, 242, 254, 0.03);
-  border-radius: 12px;
-  padding: 28px 35px;
+  width: 100%;
+  background: rgba(0, 242, 254, 0.04);
+  border-radius: 16px;
+  padding: 36px 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(0, 242, 254, 0.15);
-  min-height: 100px;
+  border: 1px solid rgba(0, 242, 254, 0.2);
+  min-height: 130px;
 }
 
 .formula-img {
-  max-width: 100%;
+  width: 85%;
   height: auto;
-  min-height: 60px;
-  max-height: 100px;
   object-fit: contain;
-  filter: invert(1) brightness(2.5) drop-shadow(0 0 8px rgba(0, 242, 254, 0.6));
+  filter: invert(1) brightness(3) drop-shadow(0 0 12px rgba(0, 242, 254, 0.8));
   opacity: 1;
-  image-rendering: crisp-edges;
+  display: block;
 }
 
 /* Image Showcase / Galleries */
